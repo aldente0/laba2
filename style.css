@@ -1,0 +1,18 @@
+p {
+    display: block;
+    width: 700px;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+p span {
+    font-weight: bold;
+}
+
+#result {
+    display: none;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+</head>
+<body>
+    <h1>Тест</h1>
+    <p id="result"></p>
+    <form id="test" name="test" method="get">
+        <fieldset name="userfield">
+            <legend>На какие вопросы отвечают краткие прилагательные?</legend>
+            <p><label> <input type="radio" name="first" required value="wrong">Все из перечисленных</label></p>
+            <p><label> <input type="radio" name="first" required value="correct">Каков? Какова? Каково? Каковы?</label></p>
+            <p><label> <input type="radio" name="first" required value="wrong">Кто? Что?</label></p>
+            <p><label> <input type="radio" name="first" required value="wrong">Зачем? Почему?</label></p>
+            <p><label> <input type="radio" name="first" required value="wrong">Никакие из перечисленных</label></p>
+         </fieldset>
+         <fieldset name="userfield">
+            <legend>Какие оконачания характерны для кратких прилагательных</legend>
+            <p><label> <input type="radio" name="second" required value="wrong">Все из перечисленных</label></p>
+            <p><label> <input type="radio" name="second" required value="wrong">-ая (-яя), -ыя, -ое</label></p>
+            <p><label> <input type="radio" name="second" required value="correct">Нулевого окончания, а также окончаний -а (-я), -о (-е), -ы (-и).</label></p>
+            <p><label> <input type="radio" name="second" required value="wrong"></label>-у, -э</p>
+            <p><label> <input type="radio" name="second" required value="wrong">Никакие из перечисленных</label></p>
+         </fieldset>
+        <fieldset name="userfield">
+            <legend>По чему изменяются краткие прилагательные?</legend>
+            <p><label> <select name="third[]" multiple>
+                <option value="wrong">Ничего из перечисленных</option>
+                <option value="correct">Родам</option>
+                <option value="wrong">Падежам</option>
+                <option value="correct">Числам</option>
+                <option value="wrong">Все из перечисленных</option>
+            </select></label></p>
+         </fieldset>
+         <button name="submit">Завершить тест</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
